@@ -1,0 +1,386 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider{
+  padding-top:200px;
+}
+/* Body styles */
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/mhedibg2.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: background 0.3s ease-in-out; /* Add this line for a smooth transition */
+}
+
+
+.first{
+  width:100%;
+  height:80vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.heading{
+  text-align: center;
+  font-size: 10vh;
+  font-family:'Lobster', cursive;
+  margin-top:10vh;
+ }
+ .first:hover{
+  background-color:whitesmoke;
+  border:5px solid black;
+ }
+ .heading:hover{
+  color: cyan;
+ }
+
+/* Slideshow styles */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img.slideimage {
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 50%;
+  
+}
+
+/* Caption text */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ea1538;
+  border-radius: 4px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 5s ease;
+  
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation: pulse 5s ease-in-out infinite;
+  -webkit-animation: pulse 5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+/* Navigation styles */
+.logo {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100px;
+  max-height: 100px; /* Adjust this value as needed */
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000; /* Higher z-index to appear above other elements */
+  padding: 10px 0;
+}
+
+.fixed-navbar .nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-navbar .nav-list li {
+  list-style: none;
+  padding: 8px;
+}
+
+.fixed-navbar .nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.fixed-navbar .nav-list li a:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+
+/* Box-main styles (used in multiple sections) */
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 90%;
+  margin: auto;
+  height: auto;
+  padding :20px;
+  border:5px solid white
+}
+
+/* Section styles */
+.firstSection {
+  padding: 10% 0;
+  
+}
+
+.firstHalf {
+  width: 60%;
+  text-align: center;
+  
+}
+
+.secondHalf {
+  width: 60%;
+  margin-top: 20px;
+}
+
+.secondHalf img {
+  width: 100%;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+.text-small {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.text-big {
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-family: 'Lobster', cursive;
+}
+
+.btn {
+  padding: 8px 15px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 5px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ea1538;
+  transition: 0.3s;
+}
+
+/* SectionRight styles */
+.SectionRight {
+  background-color: aliceblue;
+  margin:100px 0 100px 0;
+  height: 100vh;
+
+  
+}
+
+.SecondSectionBody {
+  font-size: 25px;
+  padding: 10px;
+  color: rgb(21, 2, 2);
+  width: 100%;
+}
+
+.SecondSectionHeading {
+  font-size: 40px;
+  padding-bottom: 20px;
+  color: rgb(11, 1, 1);
+  font-family: 'Lobster', cursive;
+  width: 100%;
+}
+
+.statement {
+  font-size: 20px;
+  padding: 20px 0 0 0;
+  font-family: cursive;
+  color: rgb(16, 1, 1);
+  width:50%;
+}
+
+.Name {
+  font-family: 'Pacifico', cursive;
+  color: rgb(245, 8, 8);
+}
+
+/* Box-main2 styles */
+.box-main2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  max-width: 90%;
+  margin-left: 5%;
+  height: 100vh;
+
+}
+
+/* Contact Form styles */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  border: 5px solid black;
+  padding: 20px;
+}
+
+.cf {
+  background-color: #ffffff;
+  color: #111111;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.CFS {
+  margin-top: 100px;;
+  border: 1px solid black;
+}
+/* Reset CSS */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover img {
+  transform: scale(1.2);
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grid-item:hover::before {
+  opacity: 1;
+}
